@@ -45,3 +45,23 @@
 - [ ] 7.3 Test local folder photo source
 - [ ] 7.4 Test iCloud integration (if account available)
 - [ ] 7.5 Verify watchdog file watching works correctly
+
+## 8. SD Card Image Generation
+- [ ] 8.1 Create `build-image.py` script with CLI argument parsing
+- [ ] 8.2 Implement WiFi preconfiguration (wpa_supplicant or NetworkManager)
+- [ ] 8.3 Add auto-login configuration (getty override)
+- [ ] 8.4 Create systemd service file for photo frame auto-start
+- [ ] 8.5 Implement dependency installation (pip install in Docker/chroot)
+- [ ] 8.6 Add application file copying to image
+- [ ] 8.7 Configure user account (pi user with sudo)
+- [ ] 8.8 Enable SSH in generated image
+- [ ] 8.9 Add documentation for build process and usage
+
+## 9. Dev Sync Tool
+- [ ] 9.1 Create `sync-to-pi.sh` script with rsync over SSH
+- [ ] 9.2 Add CLI argument parsing (host, dry-run, no-restart, dev mode)
+- [ ] 9.3 Implement rsync exclude patterns (.git, __pycache__, *.pyc)
+- [ ] 9.4 Add auto service restart after successful sync
+- [ ] 9.5 Implement config backup before syncing config files
+- [ ] 9.6 Add dev mode flag for verbose logging/foreground output
+- [ ] 9.7 Add documentation for sync workflow
