@@ -1,0 +1,22 @@
+# Inky Photo Frame Dependencies
+# Generated for Inky Impression 13.3" (2025 edition)
+
+# Core display library (Raspberry Pi specific)
+# Handles palette quantization and Floyd-Steinberg dithering
+inky[rpi,example-depends]>=1.5.0
+
+# Image processing
+Pillow>=10.0.0
+pillow-heif>=0.13.0
+
+# Configuration
+toml>=0.10.0
+
+# File watching for local photo source
+watchdog>=3.0.0
+
+# iCloud Photos integration
+pyicloud>=1.0.0
+
+# Logging (optional but recommended)
+colorlog>=6.0.0

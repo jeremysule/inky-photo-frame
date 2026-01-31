@@ -1,0 +1,53 @@
+# Inky Photo Frame Configuration
+# Copy this file to config.toml and customize for your setup
+
+[display]
+# How often to refresh the display (seconds)
+refresh_interval = 3600  # 1 hour
+
+# Perform a full refresh every N updates (removes ghosting)
+full_refresh_every = 10
+
+# Display saturation for palette quantization (0.0-1.0)
+# Higher = more saturated colors, Lower = more muted/pastel
+# The Inky library blends between desaturated and saturated palettes
+saturation = 0.5
+
+[photo]
+# Path to local photo folder (expanded ~ to home directory)
+local_path = "~/Photos/Frame"
+
+# Photo selection mode: "random" or "sequential"
+selection_mode = "random"
+
+[processing]
+# Pre-processing saturation boost (1.0-2.0)
+# Applied BEFORE display saturation, boosts source image colors
+# E-paper displays have lower saturation, so we boost the source
+saturation = 1.3
+
+# Pre-processing contrast boost (1.0-2.0)
+# E-paper displays have lower contrast, so we boost the source
+contrast = 1.2
+
+# Smart crop bias for portraits: "top" or "center"
+portrait_bias = "top"
+
+[icloud]
+# Enable iCloud Photos as a photo source
+enabled = false
+
+# Apple ID for iCloud authentication
+# Note: App-specific passwords are NOT supported
+# Advanced Data Protection must be disabled on iCloud account
+apple_id = ""
+
+# Path to store iCloud session credentials
+session_path = "~/.config/inky-photo-frame/icloud_session"
+
+[logging]
+# Logging level: "DEBUG", "INFO", "WARNING", "ERROR"
+level = "INFO"
+
+# Log file location (empty for stdout only)
+file = ""
