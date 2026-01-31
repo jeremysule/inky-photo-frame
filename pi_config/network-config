@@ -1,0 +1,15 @@
+network:
+  version: 2
+  ethernets:
+    eth0:
+      dhcp4: true
+      dhcp6: true
+      optional: true
+  wifis:
+    wlan0:
+      dhcp4: true
+      regulatory-domain: "GB"
+      access-points:
+        "000_WIFI_000":
+          password: "37021d200e4dab38f49381bd38e199fe47d16b65e6ecd16672f5a97fafa429cd"
+      optional: true
